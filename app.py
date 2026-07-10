@@ -508,6 +508,72 @@ with tab4:
         )
         st.plotly_chart(fig_store, use_container_width=True)
 
+
+footer_html = """
+<div style='
+background: linear-gradient(135deg,#111827,#1f2937);
+padding: 30px;
+border-radius: 20px;
+text-align: center;
+border: 1px solid #374151;
+margin-top: 30px;
+'>
+
+<h2 style='color:#f59e0b;'>
+☕ Afficionado Coffee Roasters
+</h2>
+
+<p style='color:#d1d5db; font-size:16px;'>
+Advanced Sales Trend & Time-Based Performance Analytics Dashboard
+</p>
+
+<div style='margin-top:20px;'>
+
+<a href='https://www.afficionadocoffee.com/'
+target='_blank'
+style='
+text-decoration:none;
+background: linear-gradient(90deg,#f59e0b,#ef4444);
+color:white;
+padding:12px 20px;
+border-radius:12px;
+margin:10px;
+display:inline-block;
+font-weight:bold;
+'>
+🌐 Official Website
+</a>
+
+<a href='https://www.instagram.com/afficionado_coffee/'
+target='_blank'
+style='
+text-decoration:none;
+background: linear-gradient(90deg,#f59e0b,#ef4444);
+color:white;
+padding:12px 20px;
+border-radius:12px;
+margin:10px;
+display:inline-block;
+font-weight:bold;
+'>
+📸 Instagram
+</a>
+
+</div>
+
+<p style='
+color:#9ca3af;
+margin-top:20px;
+font-size:14px;
+'>
+Designed for Business Intelligence & Retail Analytics
+</p>
+
+</div>
+"""
+
+st.markdown(footer_html, unsafe_allow_html=True)
+
 st.divider()
 st.caption(
     "Built with Streamlit, Pandas & Plotly · Upload your own coffee-shop sales "
